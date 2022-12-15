@@ -1,0 +1,92 @@
+.home-icon {
+  margin-bottom: 4px;
+}
+
+html {
+  background: #303a40;
+}
+
+.main-view {
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-weight: 500;
+}
+
+span {
+  font-weight: 500;
+}
+
+.card-img {
+  max-height: 500px;
+  max-width: 550px;
+}
+
+.movieView-card {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fav-btn {
+  float: right;
+}
+
+.title {
+  float: left;
+}
+
+.movieView-icon {
+  margin-bottom: 4px;
+}
+
+.card-title {
+  font-size: 27px;
+}
+
+.movie-card {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.favorites-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.remove-btn, .del-btn {
+  float: right;
+}
+
+.favorites {
+  justify-content: center;
+}
+
+.login-title {
+  text-align: center;
+}
+
+.loginbdy {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: 500;
+}
+
+.app-container {
+  background-color: #303a40;
+}
+
+.register-title {
+  text-align: center;
+}
+
+.registerbdy {
+  margin: 20%;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.24987d7b.css.map */
