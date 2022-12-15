@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Emmanuelnz/myFlix-client-React#readme",
   "dependencies": {
     "axios": "^1.2.1",
+    "parcel": "^2.8.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
