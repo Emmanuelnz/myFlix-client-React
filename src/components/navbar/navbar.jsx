@@ -46,7 +46,7 @@ export function NavBar({ user }) {
               <Button 
                 variant='dark' 
                 href='/' 
-                >myFlix
+              > myFlix
               </Button>
               </Offcanvas.Title>
             </Offcanvas.Header>
@@ -73,7 +73,7 @@ export function NavBar({ user }) {
                       className='logOut-btn'
                       variant='dark' 
                       onClick={() => {onLogOut()}}
-                      ><BsBoxArrowRight/>Log out
+                      ><BsBoxArrowRight/> Log out
                     </Button>
                   )}
                 </Nav>

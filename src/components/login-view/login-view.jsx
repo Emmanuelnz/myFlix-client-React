@@ -81,7 +81,7 @@ export function LoginView(props) {
                     <Form.Label>Password: </Form.Label>
                     <Form.Control 
                       value={password} 
-                      type='text' 
+                      type='password' 
                       placeholder='Enter Password' 
                       onChange={e => setPassword(e.target.value)} /> 
                       {passwordErr && <p>{passwordErr}</p>}
