@@ -23,7 +23,8 @@ export class MovieCard extends React.Component {
               className='card-img'
               variant='top' 
               crossOrigin='anonymous'
-              src={movie.ImagePath} 
+              src={movie.ImagePath}
+              style={{ minHeight: '15rem', maxHeight: '30rem' }} 
               />
           </Link>
             <Card.Title className='movie-card'>{movie.Title}</Card.Title>

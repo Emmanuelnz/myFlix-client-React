@@ -1,7 +1,7 @@
 import React from 'react';
 
 // React-bootstrap imports 
-import { Navbar, Container, Nav, Button, Offcanvas, Col, Row } from 'react-bootstrap';
+import { Navbar, Container, Nav, Button, Offcanvas, Col, } from 'react-bootstrap';
 
 // Icon imports 
 import { AiOutlineHome } from "react-icons/ai";
@@ -36,7 +36,8 @@ export function NavBar({ user }) {
       sticky='top' 
       bg='dark' 
       expand='xxl' 
-      variant='dark'>
+      variant='dark'
+    >
       <Container fluid>
         <Button variant='dark' href='/' ><AiOutlineHome className='home-icon'/> Home</Button>
         <Navbar.Toggle aria-controls='offcanvasNavbar-expand' />
