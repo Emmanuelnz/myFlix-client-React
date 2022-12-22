@@ -55,6 +55,7 @@ export function LoginView(props) {
     })
     .catch(function (error) {
       console.log(error);
+      alert('Incorrect Username or Password, please try again.');
     });
    }
   };
