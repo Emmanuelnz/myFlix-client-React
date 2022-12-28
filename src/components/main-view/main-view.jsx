@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 import { setMovies, setUser, setUserData, getToken } from "../../actions/actions";
 
 // Custom Components Imports 
-import { Navbar} from "../navbar/navbar";
+import { NavBar } from '../navbar/navbar';
 import { RegistrationView } from "../registration-view/registration-view";
 import { LoginView } from "../login-view/login-view";
 import { ProfileView } from "../profile-view/profile-view";
@@ -22,7 +22,7 @@ import { GenreView } from "../genre-view/genre-view";
 import MoviesList from "../movies-list/movies-list";
 
 // React-bootstrap Imports 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col,} from "react-bootstrap";
 
 // Custom SCSS 
 import "../main-view/main-view.scss";
@@ -75,7 +75,7 @@ class MainView extends React.Component {
 
     return (
       <Router>
-        <Navbar user={user} />
+        <NavBar user={ user } />
         <Row className="main-view justify-content-md-center gap-2">
 
           {/* ================= LOGIN ================= */}
