@@ -11,8 +11,8 @@ import { connect } from "react-redux";
 // Actions Imports 
 import { setMovies, setUser, setUserData, getToken } from "../../actions/actions";
 
-// Custom Components Imports 
-import { NavBar } from '../navbar/navbar';
+// Custom Components Imports
+import { NavbarView } from "../nav-bar/navbar";
 import { RegistrationView } from "../registration-view/registration-view";
 import { LoginView } from "../login-view/login-view";
 import { ProfileView } from "../profile-view/profile-view";
@@ -75,7 +75,7 @@ class MainView extends React.Component {
 
     return (
       <Router>
-        <NavBar user={ user } />
+        <NavbarView user={user} />
         <Row className="main-view justify-content-md-center gap-2">
 
           {/* ================= LOGIN ================= */}

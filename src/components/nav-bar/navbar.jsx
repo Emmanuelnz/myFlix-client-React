@@ -9,9 +9,9 @@ import { VscAccount } from "react-icons/vsc";
 import { BsBoxArrowRight } from "react-icons/bs"; 
 
 // Custom SCSS 
-import '../navbar/navbar.scss';
+import './navbar.scss';
 
-export function Navbar({user}) {
+export function NavbarView({user}){
 
   const onLogOut = () => {
     localStorage.clear();
@@ -81,5 +81,5 @@ return (
         </Navbar.Offcanvas>
     </Container>
   </Navbar>
-);
+  );
 }
