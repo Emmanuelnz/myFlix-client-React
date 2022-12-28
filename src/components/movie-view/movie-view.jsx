@@ -14,7 +14,6 @@ import { BsQuestionCircle } from "react-icons/bs";
 // Custom SCSS
 import '../movie-view/movie-view.scss';
 
-
 export class MovieView extends React.Component {
 
   addFavorite(movie) {
@@ -40,11 +39,13 @@ export class MovieView extends React.Component {
       <Container fluid>
         <Row>
           <Col>
-            <Card className='movieView-card' bg='dark' text='light'>
+            <Card className='mt-3 movieView-Card' bg='dark' text='light' style={{ maxHeight: '55rem', maxWidth: '20rem' }}>
               <Card.Img
                 className='movie-img'
                 crossOrigin='anonymous' 
-                src={ movie.ImagePath } />
+                src={ movie.ImagePath } 
+                style={{ maxHeight: '25rem', maxWidth: '20rem' }}
+              />
                 <Card.Body>
                 <Card.Title className='pt-1'>
                   <Col className='card-title mt-2'>{ movie.Title }</Col>
@@ -77,16 +78,16 @@ export class MovieView extends React.Component {
                   </Card.Text>
               </Card.Body>
               <Card.Footer> 
-                <Button 
-                  variant='outline-light' 
-                  onClick={ () => {onBackClick(); }}
-                  >« Back 
-                </Button>
                 <Button
-                  className='fav-btn'
                   variant='outline-light'
                   onClick={() => this.addFavorite(movie)}
                   >Favorites + 
+                </Button>
+                <Button
+                  className='back-btn'
+                  variant='outline-light' 
+                  onClick={ () => {onBackClick(); }}
+                  >« Back 
                 </Button>
               </Card.Footer>
             </Card> 

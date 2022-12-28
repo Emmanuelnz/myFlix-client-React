@@ -14,7 +14,7 @@ export class DirectorsView extends React.Component {
 
     return (
       <Container>
-        <Card bg='dark' text='light'>
+        <Card bg='dark' text='light' className='mt-4'>
           <Card.Header className='title'>Directors</Card.Header>
             <Card.Body>
               <Card.Text><span>Name:</span> {directors.Name}</Card.Text>

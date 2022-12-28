@@ -52,7 +52,6 @@ export function RegistrationView(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const isReq = validate();
 
     if(isReq) {
@@ -71,7 +70,7 @@ export function RegistrationView(props) {
       })
       .catch(response => {
         console.error(response);
-        alert('unable to register');
+        alert('Unable to register');
       });
     }
   };
@@ -80,7 +79,7 @@ export function RegistrationView(props) {
     <Container>
       <Row>
         <Col>
-          <Card className='registerbdy'>
+          <Card className='register-body'>
             <Card.Body>
               <Card.Title className='register-title'>New myFlix User</Card.Title>
               <Form>

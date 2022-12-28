@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 // React-bootstrap imports
 import { Container, Card, Button } from 'react-bootstrap';
 
+// Custom SCSS 
+import '../genre-view/genre-view.scss';
+
 export class GenreView extends React.Component {
   render() {
     const { genre, onBackClick } = this.props;
     
     return (
       <Container>
-        <Card bg='dark' text='light'>
+        <Card bg='dark' text='light' className='mt-4'>
           <Card.Header className='title'>Genre</Card.Header>
             <Card.Body>
               <Card.Text><span>Type: </span>{genre.Name}</Card.Text>
@@ -20,7 +23,7 @@ export class GenreView extends React.Component {
             <Button 
               variant='outline-light'
               onClick={() => {onBackClick();}} 
-              >« Back
+            > « Back
             </Button>
           </Card.Footer>
         </Card>

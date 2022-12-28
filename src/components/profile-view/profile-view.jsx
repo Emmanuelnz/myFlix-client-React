@@ -155,21 +155,11 @@ export class ProfileView extends React.Component {
 
     return (
       <Container>
-        {/*=============================  USER INFO  =============================*/}
+        {/*===========================  EDIT PROFILE ===========================*/}
         <Row>
           <Col>
-            <Card bg='dark' text='light'>
-              <Card.Header>Your Info</Card.Header>
-              <Card.Body>
-                <Card.Text><span>Name:</span> {Username}</Card.Text>
-                <Card.Text><span>Email:</span> {Email}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        {/*=============================  EDIT PROFILE  =============================*/}
-          <Col>
-            <Card bg='dark' text='light'>
-              <Card.Header>
+            <Card bg='dark' text='light' className='mt-2'>
+              <Card.Header className='pt-2'>
                 Edit Profile
                 <Button
                   className='del-btn ms-1'
@@ -242,8 +232,18 @@ export class ProfileView extends React.Component {
               </Card.Body>
             </Card>
           </Col>
+        {/*===========================  USER INFO  ===========================*/}
+          <Col>
+            <Card bg='dark' text='light' className='mt-2'>
+              <Card.Header className='pt-2'>Your Info</Card.Header>
+              <Card.Body>
+                <Card.Text><span>Name:</span> {Username}</Card.Text>
+                <Card.Text><span>Email:</span> {Email}</Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
-        {/*=============================  FAVORITE MOVIES  =============================*/}
+        {/*===========================  FAVORITE MOVIES  ===========================*/}
         <Row className='mt-3'>
           <Col>
             <Card bg='dark' text='light'>
@@ -267,12 +267,12 @@ export class ProfileView extends React.Component {
                         variant='top'
                         crossOrigin='anonymous'
                         src={movie.ImagePath}
-                        style={{ minHeight: '15rem', maxHeight: '30rem' }}
+                        style={{ minHeight: '15rem', maxHeight: '25rem' }}
                         />
                     </Link>
                   <Card.Body>
                     <Col>
-                      <Card.Title className='favorites-title mt-2'>{movie.Title}</Card.Title>
+                      <Card.Title className='favorites-title'>{movie.Title}</Card.Title>
                     </Col>     
                   </Card.Body>
                   <Card.Footer className='mb-1'>
